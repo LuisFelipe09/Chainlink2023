@@ -1,0 +1,66 @@
+{
+  "name": "hackatons-project",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@account-abstraction/sdk": "^0.6.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.4.0",
+    "bootstrap": "^5.2.3",
+    "cors": "^2.8.5",
+    "ethers": "5.7.2",
+    "express": "^4.18.2",
+    "framer-motion": "^10.12.8",
+    "js-sha256": "^0.9.0",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.3.0",
+    "nodemailer": "^6.9.1",
+    "react": "^18.2.0",
+    "react-alice-carousel": "^2.7.0",
+    "react-bootstrap": "^2.7.2",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.9.0",
+    "react-scripts": "^5.0.1",
+    "redux": "^4.2.1",
+    "request": "^2.88.2",
+    "socket.io": "^4.6.1",
+    "socket.io-client": "^4.6.1",
+    "web-vitals": "^2.1.4",
+    "web3": "^1.8.2",
+    "web3modal": "^1.9.12"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "dev": "nodemon server/index.mjs"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/bootstrap": "^5.2.6",
+    "nodemon": "^2.0.22"
+  }
+}
