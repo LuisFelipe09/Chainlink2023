@@ -49,8 +49,10 @@ const send_message_bot = async (phone_number, text) => {
 
     try {
         json = JSON.parse(data[0].text);
-        text_message = json.text
-        let ulr = 'https://gateway.estuary.tech/gw/ipfs/' + text_message
+        text_message = encodeURIComponent(json.original_message);
+        console.log(json);
+        let ulr = `https://c35e-186-155-166-127.ngrok.io/api/image?prompt=${text_message}`;
+        return 'ok'
         sendMessageNFT(phone_number, ulr)
     }catch{
         text_message = data[0].text;

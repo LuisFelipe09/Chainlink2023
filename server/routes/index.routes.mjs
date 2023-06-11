@@ -4,7 +4,7 @@ import {postReviceMessage} from "../services/whatsapp/resolverReciveMessage.mjs"
 import {postTestAccount} from "../services/account.mjs"
 import {getCreateImage}  from "../services/iaImage/createImage.mjs"
 
-const router = Router();
+const router = Router({ mergeParams: true });
 
 router.post("/api/register", getRegister);
 router.post("/api/login", getLogin);

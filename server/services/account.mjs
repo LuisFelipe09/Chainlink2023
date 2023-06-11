@@ -1,6 +1,7 @@
 import { ethers, Wallet, utils } from "ethers";
 import { SimpleAccountAPI } from '@account-abstraction/sdk'
 import entryPoint from './entrypointAbi.json'   assert { type: 'json' };
+import 'dotenv/config'
 
 
 const json = entryPoint;
@@ -262,7 +263,7 @@ export const sendMessageNFT = async (phone_number, urlNFT) => {
 }
 // example endpoint use. Real interaction is with whatsapp.
 export const postTestAccount = async (req, res) => {
-    await sendMessageNFT('573058149030', 'https://554f-204-199-66-50.ngrok.io/api/image?prompt=eeie');
+    await sendMessageNFT('573058149030', 'https://c35e-186-155-166-127.ngrok.io/api/image?prompt=cats%20and%20dogs');
 
     return res.status(200);
 }
