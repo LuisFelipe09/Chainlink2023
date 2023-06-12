@@ -52,7 +52,6 @@ const send_message_bot = async (phone_number, text) => {
         text_message = encodeURIComponent(json.original_message);
         console.log(json);
         let ulr = `https://c35e-186-155-166-127.ngrok.io/api/image?prompt=${text_message}`;
-        return 'ok'
         sendMessageNFT(phone_number, ulr)
     }catch{
         text_message = data[0].text;
